@@ -1,0 +1,79 @@
+# .gitignore for superheroes (Angular project)
+superheroes/node_modules/
+superheroes/dist/
+superheroes/.angular/
+superheroes/.cache/
+superheroes/.tmp/
+superheroes/.idea/
+superheroes/.vscode/
+#superheroes/src/environments/environment.prod.ts
+#superheroes/src/environments/environment.ts
+
+# Logs
+superheroes/logs
+superheroes/npm-debug.log*
+superheroes/yarn-debug.log*
+superheroes/yarn-error.log*
+
+# Angular build artifacts
+superheroes/build/
+superheroes/coverage/
+
+# Optional npm cache directory
+superheroes/.npm/
+
+# IDE files
+superheroes/.project
+superheroes/.classpath
+superheroes/.settings/
+
+# .gitignore for superheroes-backend (Spring Boot project)
+superheroes-backend/target/
+superheroes-backend/bin/
+superheroes-backend/out/
+superheroes-backend/.idea/
+superheroes-backend/.vscode/
+superheroes-backend/.settings/
+superheroes-backend/.project
+superheroes-backend/.classpath
+
+# Logs
+superheroes-backend/logs/
+superheroes-backend/*.log
+
+# Compiled class files
+superheroes-backend/**/*.class
+
+# Maven dependencies
+superheroes-backend/.mvn/
+superheroes-backend/.idea/
+
+# IntelliJ IDEA
+superheroes-backend/.idea/
+superheroes-backend/.idea/*
+superheroes-backend/*.iml
+superheroes-backend/modules.xml
+superheroes-backend/*.ipr
+
+# Eclipse
+superheroes-backend/.metadata/
+superheroes-backend/*.log
+superheroes-backend/*.bak
+superheroes-backend/*.swp
+superheroes-backend/.lock
+
+# Windows
+superheroes-backend/thumbs.db
+superheroes-backend/*.DS_Store
+
+# macOS
+superheroes-backend/.DS_Store
+superheroes-backend/.AppleDouble
+superheroes-backend/.LSOverride
+
+# Node.js
+superheroes-backend/node_modules/
+
+# Others
+superheroes-backend/*.DS_Store
+superheroes-backend/.env
