@@ -1,4 +1,0 @@
-PATH=%PATH%C:\Program Files\PostgreSQL\16\bin
-psql -U postgres
-P@ssw0rd1
-create database "springDevDb";

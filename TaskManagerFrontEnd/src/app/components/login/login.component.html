@@ -1,0 +1,31 @@
+<div class="login-container">
+  <h2 data-cy="login-title">Login</h2>
+
+  <p class="hint">Module 4 uses a mock login (any non-empty username/password).</p>
+
+  <form (ngSubmit)="submit()" #loginForm="ngForm">
+    <label>
+      Username
+      <input name="username"
+       [(ngModel)]="username"
+       required
+       data-cy="username" />
+    </label>
+
+    <label>
+      Password
+      <input name="password"
+      type="password"
+      [(ngModel)]="password"
+      required
+      data-cy="password" />
+    </label>
+
+    <button type="submit"
+        data-cy="submit-login">
+        Login
+    </button>
+  </form>
+
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>

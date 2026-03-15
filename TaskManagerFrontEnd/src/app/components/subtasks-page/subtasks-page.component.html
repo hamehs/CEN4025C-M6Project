@@ -1,0 +1,33 @@
+<h2>Subtasks</h2>
+
+<p class="note">
+  This page lists all subtasks from the backend. (Subtasks also appear under each task on the Tasks page.)
+</p>
+
+<table class="grid" *ngIf="subtasks.length; else empty">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Status</th>
+      <th>Task ID</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of subtasks; trackBy: trackById">
+      <td>{{ s.id }}</td>
+      <td>{{ s.title }}</td>
+      <td>{{ s.status }}</td>
+      <td>{{ s.taskId }}</td>
+      <td>
+        <button (click)="toggle(s)">Toggle Status</button>
+        <button (click)="delete(s.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #empty>
+  <p>No subtasks found.</p>
+</ng-template>

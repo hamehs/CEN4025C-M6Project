@@ -1,79 +1,93 @@
-# .gitignore for superheroes (Angular project)
-superheroes/node_modules/
-superheroes/dist/
-superheroes/.angular/
-superheroes/.cache/
-superheroes/.tmp/
-superheroes/.idea/
-superheroes/.vscode/
-#superheroes/src/environments/environment.prod.ts
-#superheroes/src/environments/environment.ts
+####################################
+# Node / Angular
+####################################
+
+node_modules/
+dist/
+build/
+.angular/
+.cache/
+.tmp/
+coverage/
+.npm/
+.eslintcache
+package-lock.json
 
 # Logs
-superheroes/logs
-superheroes/npm-debug.log*
-superheroes/yarn-debug.log*
-superheroes/yarn-error.log*
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Angular build artifacts
-superheroes/build/
-superheroes/coverage/
+####################################
+# Cypress
+####################################
 
-# Optional npm cache directory
-superheroes/.npm/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
 
-# IDE files
-superheroes/.project
-superheroes/.classpath
-superheroes/.settings/
+####################################
+# Environment files
+####################################
 
-# .gitignore for superheroes-backend (Spring Boot project)
-superheroes-backend/target/
-superheroes-backend/bin/
-superheroes-backend/out/
-superheroes-backend/.idea/
-superheroes-backend/.vscode/
-superheroes-backend/.settings/
-superheroes-backend/.project
-superheroes-backend/.classpath
+.env
+.env.*
+src/environments/environment.ts
+src/environments/environment.prod.ts
 
-# Logs
-superheroes-backend/logs/
-superheroes-backend/*.log
+####################################
+# Java / Spring Boot
+####################################
 
-# Compiled class files
-superheroes-backend/**/*.class
+target/
+bin/
+out/
+.mvn/
+*.class
+*.jar
+*.war
+*.ear
 
-# Maven dependencies
-superheroes-backend/.mvn/
-superheroes-backend/.idea/
+####################################
+# IDEs
+####################################
 
-# IntelliJ IDEA
-superheroes-backend/.idea/
-superheroes-backend/.idea/*
-superheroes-backend/*.iml
-superheroes-backend/modules.xml
-superheroes-backend/*.ipr
+# VS Code
+.vscode/
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+modules.xml
+*.ipr
 
 # Eclipse
-superheroes-backend/.metadata/
-superheroes-backend/*.log
-superheroes-backend/*.bak
-superheroes-backend/*.swp
-superheroes-backend/.lock
+.project
+.classpath
+.settings/
+.metadata/
 
-# Windows
-superheroes-backend/thumbs.db
-superheroes-backend/*.DS_Store
+####################################
+# OS Files
+####################################
 
 # macOS
-superheroes-backend/.DS_Store
-superheroes-backend/.AppleDouble
-superheroes-backend/.LSOverride
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Node.js
-superheroes-backend/node_modules/
+# Windows
+Thumbs.db
+Desktop.ini
 
-# Others
-superheroes-backend/*.DS_Store
-superheroes-backend/.env
+####################################
+# Misc
+####################################
+
+*.swp
+*.bak
+*.tmp
+*.lock

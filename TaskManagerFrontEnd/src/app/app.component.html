@@ -1,0 +1,22 @@
+<header class="app-header">
+  <div class="brand">
+    <span class="title">{{ title }}</span>
+  </div>
+
+  <nav class="nav">
+    <a routerLink="/tasks" routerLinkActive="active" *ngIf="auth.isAuthenticated()">Tasks</a>
+    <a routerLink="/users" routerLinkActive="active" *ngIf="auth.isAuthenticated()">Users</a>
+    <a routerLink="/subtasks" routerLinkActive="active" *ngIf="auth.isAuthenticated()">Subtasks</a>
+
+    <a routerLink="/login" routerLinkActive="active" *ngIf="!auth.isAuthenticated()">Login</a>
+  </nav>
+
+  <div class="auth">
+    <span class="user" *ngIf="auth.isAuthenticated()">Signed in as: {{ auth.getUsername() }}</span>
+    <button class="logout" *ngIf="auth.isAuthenticated()" (click)="logout()">Logout</button>
+  </div>
+</header>
+
+<main class="app-main">
+  <router-outlet></router-outlet>
+</main>

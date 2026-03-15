@@ -1,0 +1,14 @@
+/* Flex container to align sections side by side */
+.container {
+    display: flex;             /* Enable flex layout */
+    justify-content: space-around; /* Add space between sections */
+    align-items: flex-start;   /* Align items vertically at the top */
+    gap: 20px;                 /* Add space between sections */
+  }
+  
+  /* Optional: Style for individual sections */
+  .task-section,
+  .user-section {
+    flex: 1;                   /* Allow sections to take up equal space */
+  }
+  
