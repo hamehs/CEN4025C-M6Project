@@ -1,9 +1,9 @@
 -- Sample data for task manager
 
 -- Priorities
-INSERT INTO priorities (level) VALUES ('LOW') ON CONFLICT DO NOTHING;
-INSERT INTO priorities (level) VALUES ('MEDIUM') ON CONFLICT DO NOTHING;
-INSERT INTO priorities (level) VALUES ('HIGH') ON CONFLICT DO NOTHING;
+INSERT INTO priorities (level) VALUES ('LOW');
+INSERT INTO priorities (level) VALUES ('MEDIUM');
+INSERT INTO priorities (level) VALUES ('HIGH');
 
 -- Users (updated to match salt/hash fields)
 INSERT INTO users (username, salt, hash) VALUES
